@@ -64,7 +64,7 @@ public class UserController {
 	public List<User> saveAll(@PathVariable String userName)throws UserNotFoundException
 	{
 		List<User> usersname=userservice.saveAllMethod(userName);
-		return usersname;
+		return usersname1;
 	}
 	
 }
