@@ -60,5 +60,11 @@ public class UserController {
 		List<User> usersname=userservice.findUserByName(userName);
 		return usersname;
 	}
+	@GetMapping("/SaveAll")
+	public List<User> saveAll(@PathVariable String userName)throws UserNotFoundException
+	{
+		List<User> usersname=userservice.saveAllMethod(userName);
+		return usersname;
+	}
 	
 }
